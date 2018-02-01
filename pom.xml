@@ -43,22 +43,32 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--&lt;!&ndash; tomcat支持 &ndash;&gt;-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.apache.tomcat.embed</groupId>-->
-			<!--<artifactId>tomcat-embed-jasper</artifactId>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
-		<!--&lt;!&ndash; jsp标签库 &ndash;&gt;-->
-		<!--<dependency>-->
-			<!--<groupId>javax.servlet</groupId>-->
-			<!--<artifactId>jstl</artifactId>-->
-		<!--</dependency>-->
+		<!-- 添加 tomcat 的支持 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+
+		</dependency>
+
+		<!-- servlet 依赖 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+
+		</dependency>
+
+		<!-- 添加 JSTL 支持 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>mysql</groupId>
